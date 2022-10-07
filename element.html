@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <div id="mydiv" style="padding:16px ; background-color:aquamarine">
+    <h3>A div Element</h3> -->
+     <!-- <ul id="mylist">
+        <li>Tea</li>
+        <li>coffee</li>
+    </ul>
+    <button onclick="MyFunction()">Append</button>
+</div> 
+ <ul id="mylist1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<ul id="mylist2">
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<button onclick="MyFunction()">Move</button>  -->
+</body>
+<script>
+//  const para=document.createElement("p");
+//  para.innerHTML="This is a paragraph.";
+//  document.getElementById("mydiv").appendChild(para);
+// function MyFunction(){
+//create an li node
+
+const node=document.createElement("li");
+ const node1=document.createElement("li");
+//text node
+ var textnode=document.createTextNode("milk");
+ var T1=document.createTextNode("water");
+//append text node to li node
+
+node.appendChild(textnode);
+
+node1.appendChild(T1);
+//append to list
+
+
+const node=document.getElementById("mylist2").firstElementChild;
+ const list=document.getElementById("mylist1");
+ list.insertBefore(node,null); 
+document.body.style.backgroundColor = "yellow";
+}
+
+</script>
+</html>
